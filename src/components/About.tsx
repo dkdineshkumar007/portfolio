@@ -7,9 +7,9 @@ import { personalInfo, aboutMe } from '@/data/personal'
 const About = () => {
   const stats = [
     { icon: Code, label: 'Years Experience', value: '2+' },
-    { icon: Award, label: 'Projects Completed', value: '15+' },
+    { icon: Award, label: 'Projects Completed', value: '5+' },
     { icon: Coffee, label: 'Cups of Coffee', value: '500+' },
-    { icon: User, label: 'Happy Clients', value: '10+' },
+    { icon: User, label: 'Happy Clients', value: '5+' },
   ]
 
   return (
