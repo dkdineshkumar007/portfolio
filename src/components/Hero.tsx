@@ -122,20 +122,6 @@ const Hero = () => {
             </a>
           </motion.div>
 
-          {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          >
-            <button
-              onClick={scrollToNext}
-              className="animate-bounce p-2 rounded-full bg-primary-500/10 backdrop-blur-sm border border-primary-500/30 text-primary-400 hover:bg-primary-500/20 hover:border-primary-400 transition-all duration-300"
-            >
-              <ChevronDown size={24} />
-            </button>
-          </motion.div>
         </div>
       </div>
 

@@ -29,7 +29,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="section-padding bg-gray-50 dark:bg-slate-800">
+    <section id="contact" className="section-padding bg-accent-black-light">
       <div className="container-custom mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,10 +38,10 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology
           </p>
         </motion.div>
@@ -56,10 +56,10 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 Let's Connect
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+              <p className="text-gray-400 leading-relaxed mb-8">
                 Whether you have a project in mind, want to collaborate, or just want to say hello, 
                 I'd love to hear from you. Feel free to reach out through any of the channels below.
               </p>
@@ -72,16 +72,16 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="flex items-center gap-4 p-4 bg-accent-black-medium border border-primary-500/20 rounded-xl hover:border-primary-400/40 hover:bg-primary-500/5 transition-all duration-300"
               >
-                <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                  <Mail className="w-6 h-6 text-blue-600" />
+                <div className="p-3 bg-primary-500/20 border border-primary-500/30 rounded-lg">
+                  <Mail className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
+                  <h4 className="font-semibold text-white">Email</h4>
                   <a 
                     href={`mailto:${personalInfo.email}`}
-                    className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                   >
                     {personalInfo.email}
                   </a>
@@ -93,16 +93,16 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="flex items-center gap-4 p-4 bg-accent-black-medium border border-primary-500/20 rounded-xl hover:border-primary-400/40 hover:bg-primary-500/5 transition-all duration-300"
               >
-                <div className="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                  <Phone className="w-6 h-6 text-green-600" />
+                <div className="p-3 bg-primary-500/20 border border-primary-500/30 rounded-lg">
+                  <Phone className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
+                  <h4 className="font-semibold text-white">Phone</h4>
                   <a 
                     href={`tel:${personalInfo.phone}`}
-                    className="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                   >
                     +91 {personalInfo.phone}
                   </a>
@@ -114,14 +114,14 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="flex items-center gap-4 p-4 bg-accent-black-medium border border-primary-500/20 rounded-xl hover:border-primary-400/40 hover:bg-primary-500/5 transition-all duration-300"
               >
-                <div className="p-3 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
-                  <MapPin className="w-6 h-6 text-purple-600" />
+                <div className="p-3 bg-primary-500/20 border border-primary-500/30 rounded-lg">
+                  <MapPin className="w-6 h-6 text-primary-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <h4 className="font-semibold text-white">Location</h4>
+                  <p className="text-gray-400">
                     {personalInfo.location}
                   </p>
                 </div>
@@ -134,9 +134,9 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="pt-8 border-t border-gray-200 dark:border-gray-700"
+              className="pt-8 border-t border-primary-500/20"
             >
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+              <h4 className="font-semibold text-white mb-4">
                 Follow Me
               </h4>
               <div className="flex space-x-4">
@@ -144,7 +144,7 @@ const Contact = () => {
                   href={personalInfo.socialLinks.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-100 dark:bg-gray-800 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 transform hover:scale-110"
+                  className="p-3 bg-accent-black-medium border border-primary-500/30 rounded-lg hover:bg-primary-500/10 hover:border-primary-400/40 text-gray-400 hover:text-primary-400 transition-all duration-300 transform hover:scale-110"
                 >
                   <Github size={20} />
                 </a>
@@ -152,7 +152,7 @@ const Contact = () => {
                   href={personalInfo.socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg hover:bg-blue-200 dark:hover:bg-blue-800/50 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-300 transform hover:scale-110"
+                  className="p-3 bg-accent-black-medium border border-primary-500/30 rounded-lg hover:bg-primary-500/10 hover:border-primary-400/40 text-gray-400 hover:text-primary-400 transition-all duration-300 transform hover:scale-110"
                 >
                   <Linkedin size={20} />
                 </a>
@@ -160,7 +160,7 @@ const Contact = () => {
                   href={personalInfo.socialLinks.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-sky-100 dark:bg-sky-900/30 rounded-lg hover:bg-sky-200 dark:hover:bg-sky-800/50 text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition-all duration-300 transform hover:scale-110"
+                  className="p-3 bg-accent-black-medium border border-primary-500/30 rounded-lg hover:bg-primary-500/10 hover:border-primary-400/40 text-gray-400 hover:text-primary-400 transition-all duration-300 transform hover:scale-110"
                 >
                   <Twitter size={20} />
                 </a>
@@ -174,16 +174,16 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-lg"
+            className="bg-accent-black-medium border border-primary-500/20 rounded-2xl p-8 hover:border-primary-400/40 hover:bg-primary-500/5 transition-all duration-300"
           >
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl font-bold text-white mb-6">
               Send Message
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                     Name *
                   </label>
                   <input
@@ -193,12 +193,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-colors duration-200"
+                    className="w-full px-4 py-3 border border-primary-500/30 rounded-lg bg-accent-black-light text-white focus:ring-2 focus:ring-primary-400 focus:border-primary-400 outline-none transition-colors duration-200"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                     Email *
                   </label>
                   <input
@@ -208,14 +208,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-colors duration-200"
+                    className="w-full px-4 py-3 border border-primary-500/30 rounded-lg bg-accent-black-light text-white focus:ring-2 focus:ring-primary-400 focus:border-primary-400 outline-none transition-colors duration-200"
                     placeholder="your.email@example.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
                   Subject *
                 </label>
                 <input
@@ -225,13 +225,13 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-primary-500/30 rounded-lg bg-accent-black-light text-white focus:ring-2 focus:ring-primary-400 focus:border-primary-400 outline-none transition-colors duration-200"
                   placeholder="What's this about?"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                   Message *
                 </label>
                 <textarea
@@ -241,7 +241,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-primary-500/30 rounded-lg bg-accent-black-light text-white focus:ring-2 focus:ring-primary-400 focus:border-primary-400 outline-none transition-colors duration-200 resize-none"
                   placeholder="Tell me about your project or just say hello..."
                 />
               </div>
@@ -258,39 +258,6 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to Start Your Project?
-            </h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              I'm currently available for freelance work and full-time opportunities. 
-              Let's discuss how we can bring your ideas to life with modern web technologies.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={`mailto:${personalInfo.email}`}
-                className="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
-              >
-                Email Me
-              </a>
-              <a
-                href={`tel:${personalInfo.phone}`}
-                className="px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
-              >
-                Call Me
-              </a>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

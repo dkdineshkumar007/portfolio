@@ -33,10 +33,10 @@ const Skills = () => {
               className="bg-accent-black-medium border border-primary-500/20 rounded-2xl p-6 hover:border-primary-400/40 hover:bg-primary-500/5 transition-all duration-300"
             >
               <div className="mb-6">
-                <h3 className={`text-xl font-bold bg-gradient-to-r ${category.color} bg-clip-text text-transparent mb-2`}>
+                <h3 className="text-xl font-bold text-primary-400 mb-2">
                   {category.title}
                 </h3>
-                <div className={`w-12 h-1 bg-gradient-to-r ${category.color} rounded-full`}></div>
+                <div className="w-12 h-1 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full"></div>
               </div>
 
               <div className="space-y-4">
@@ -58,15 +58,15 @@ const Skills = () => {
                       </span>
                     </div>
                     
-                    <div className="w-full bg-accent-black rounded-full h-2 overflow-hidden">
+                    <div className="w-full bg-accent-black-light border border-primary-500/20 rounded-full h-3 overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: (categoryIndex * 0.1) + (skillIndex * 0.05) + 0.3 }}
                         viewport={{ once: true }}
-                        className={`h-full bg-gradient-to-r ${category.color} rounded-full relative`}
+                        className={`h-full bg-gradient-to-r from-primary-400 to-primary-600 rounded-full relative bumblebee-glow`}
                       >
-                        <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+                        <div className="absolute inset-0 bg-white/30 animate-pulse"></div>
                       </motion.div>
                     </div>
                   </motion.div>
@@ -117,9 +117,9 @@ const Skills = () => {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="text-center p-6 bg-primary-500/10 border border-primary-500/20 rounded-xl">
-              <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4 bumblebee-glow">
                 <span className="text-black text-2xl font-bold">F</span>
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">
@@ -131,7 +131,7 @@ const Skills = () => {
             </div>
 
             <div className="text-center p-6 bg-primary-500/10 border border-primary-500/20 rounded-xl">
-              <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4 bumblebee-glow">
                 <span className="text-black text-2xl font-bold">B</span>
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">
@@ -139,18 +139,6 @@ const Skills = () => {
               </h4>
               <p className="text-gray-400 text-sm">
                 Proficient in Node.js, Express.js, and database management with PostgreSQL and MongoDB
-              </p>
-            </div>
-
-            <div className="text-center p-6 bg-primary-500/10 border border-primary-500/20 rounded-xl">
-              <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-black text-2xl font-bold">C</span>
-              </div>
-              <h4 className="text-lg font-semibold text-white mb-2">
-                Cloud & DevOps
-              </h4>
-              <p className="text-gray-400 text-sm">
-                Experience with Azure, AWS, Docker, and CI/CD pipelines for scalable deployments
               </p>
             </div>
           </div>

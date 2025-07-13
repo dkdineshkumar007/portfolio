@@ -49,20 +49,20 @@ const Experience = () => {
                   <div className="bg-accent-black-medium border border-primary-500/20 rounded-2xl p-6 hover:border-primary-400/40 hover:bg-primary-500/5 transition-all duration-300 group">
                     {/* Header */}
                     <div className="mb-4">
-                      <div className="flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 mb-2">
+                      <div className="flex items-center gap-2 text-sm text-primary-400 mb-2">
                         <Calendar size={16} />
                         <span>{experience.duration}</span>
                         <span className="text-gray-400">•</span>
-                        <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full text-xs">
+                        <span className="px-2 py-1 bg-primary-500/20 border border-primary-500/30 rounded-full text-xs text-primary-300">
                           {experience.type}
                         </span>
                       </div>
                       
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                      <h3 className="text-xl font-bold text-white mb-1">
                         {experience.position}
                       </h3>
                       
-                      <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
+                      <div className="flex items-center gap-2 text-gray-400">
                         <Building size={16} />
                         <span className="font-medium">{experience.company}</span>
                         <span className="text-gray-400">•</span>
@@ -72,19 +72,19 @@ const Experience = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                    <p className="text-gray-400 mb-4 leading-relaxed">
                       {experience.description}
                     </p>
 
                     {/* Key Responsibilities */}
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                      <h4 className="text-sm font-semibold text-white mb-3">
                         Key Responsibilities:
                       </h4>
                       <ul className="space-y-2">
                         {experience.responsibilities.slice(0, 4).map((responsibility, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
-                            <ChevronRight size={14} className="text-blue-600 mt-0.5 flex-shrink-0" />
+                          <li key={idx} className="flex items-start gap-2 text-sm text-gray-400">
+                            <ChevronRight size={14} className="text-primary-400 mt-0.5 flex-shrink-0" />
                             <span>{responsibility}</span>
                           </li>
                         ))}
@@ -93,14 +93,14 @@ const Experience = () => {
 
                     {/* Technologies */}
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                      <h4 className="text-sm font-semibold text-white mb-3">
                         Technologies Used:
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {experience.technologies.map((tech, idx) => (
                           <span
                             key={idx}
-                            className="px-3 py-1 bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-medium border border-gray-200 dark:border-slate-600"
+                            className="px-3 py-1 bg-accent-black-light border border-primary-500/30 text-gray-300 rounded-full text-xs font-medium hover:bg-primary-500/10 hover:border-primary-400/40 hover:text-primary-300 transition-all duration-300"
                           >
                             {tech}
                           </span>
@@ -110,13 +110,13 @@ const Experience = () => {
 
                     {/* Achievements */}
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
+                      <h4 className="text-sm font-semibold text-white mb-3">
                         Key Achievements:
                       </h4>
                       <ul className="space-y-1">
                         {experience.achievements.map((achievement, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-green-600 dark:text-green-400">
-                            <div className="w-1.5 h-1.5 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                          <li key={idx} className="flex items-start gap-2 text-sm text-primary-400">
+                            <div className="w-1.5 h-1.5 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
                             <span>{achievement}</span>
                           </li>
                         ))}
@@ -124,7 +124,7 @@ const Experience = () => {
                     </div>
 
                     {/* Hover Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-primary-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
               </motion.div>
@@ -140,23 +140,41 @@ const Experience = () => {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-              Professional Growth Journey
+          <div className="bg-accent-black-medium border border-primary-500/20 rounded-2xl p-8 hover:border-primary-400/40 hover:bg-primary-500/5 transition-all duration-300 group">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              Professional <span className="gradient-text">Growth Journey</span>
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">2+</div>
-                <div className="text-gray-600 dark:text-gray-400">Years of Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">9</div>
-                <div className="text-gray-600 dark:text-gray-400">Project Modules</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">100%</div>
-                <div className="text-gray-600 dark:text-gray-400">Project Success Rate</div>
-              </div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center p-6 rounded-xl bg-accent-black-light border border-primary-500/30 hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
+              >
+                <div className="text-4xl font-bold text-primary-400 mb-2 bumblebee-glow">2+</div>
+                <div className="text-gray-400">Years of Experience</div>
+              </motion.div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center p-6 rounded-xl bg-accent-black-light border border-primary-500/30 hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
+              >
+                <div className="text-4xl font-bold text-primary-400 mb-2 bumblebee-glow">9</div>
+                <div className="text-gray-400">Project Modules</div>
+              </motion.div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center p-6 rounded-xl bg-accent-black-light border border-primary-500/30 hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
+              >
+                <div className="text-4xl font-bold text-primary-400 mb-2 bumblebee-glow">100%</div>
+                <div className="text-gray-400">Project Success Rate</div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
