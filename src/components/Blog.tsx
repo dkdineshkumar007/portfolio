@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react'
 import { blogPosts, blogCategories } from '@/data/blog'
+import { formatDate } from '@/utils/dateUtils'
 import { useState } from 'react'
 
 const Blog = () => {
@@ -103,7 +104,7 @@ const Blog = () => {
                 <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
                   <div className="flex items-center gap-1">
                     <Calendar size={14} />
-                    <span>{new Date(post.publishedAt).toLocaleDateString()}</span>
+                    <span>{formatDate(post.publishedAt)}</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <Clock size={14} />

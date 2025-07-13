@@ -28,11 +28,11 @@ export const skillsData = {
     { name: "Redis", level: 65, icon: "SiRedis" }
   ],
   cloud: [
-    { name: "Microsoft Azure", level: 85, icon: "SiMicrosoftazure" },
-    { name: "AWS", level: 70, icon: "SiAmazonaws" },
-    { name: "Docker", level: 80, icon: "SiDocker" },
-    { name: "Azure DevOps", level: 85, icon: "SiAzuredevops" },
-    { name: "CI/CD", level: 80, icon: "SiGithubactions" }
+    { name: "Microsoft Azure", level: 50, icon: "SiMicrosoftazure" },
+    { name: "AWS", level: 50, icon: "SiAmazonaws" },
+    { name: "Docker", level: 50, icon: "SiDocker" },
+    { name: "Azure DevOps", level: 50, icon: "SiAzuredevops" },
+    { name: "CI/CD", level: 50, icon: "SiGithubactions" }
   ],
   tools: [
     { name: "Git", level: 90, icon: "SiGit" },

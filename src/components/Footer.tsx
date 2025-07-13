@@ -9,7 +9,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const currentYear = new Date().getFullYear()
+  const currentYear = 2025
 
   const quickLinks = [
     { name: 'About', href: '#about' },

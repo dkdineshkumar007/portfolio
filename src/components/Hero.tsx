@@ -5,10 +5,10 @@ import { ChevronDown, Download, Mail, Github, Linkedin, Twitter } from 'lucide-r
 import { personalInfo } from '@/data/personal'
 
 const Hero = () => {
-  const scrollToNext = () => {
-    const aboutSection = document.querySelector('#about')
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' })
+  const scrollToContact = () => {
+    const contactSection = document.querySelector('#contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -74,7 +74,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           >
             <button
-              onClick={() => scrollToNext()}
+              onClick={() => scrollToContact()}
               className="btn-primary flex items-center gap-2"
             >
               <Mail size={20} />
