@@ -138,7 +138,7 @@ const Timeline = () => {
                 viewport={{ once: true }}
                 className="text-center p-4 bg-accent-black-light border border-primary-500/30 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
               >
-                <div className="text-3xl font-bold text-primary-400 mb-2 bumblebee-glow">7</div>
+                <div className="text-3xl font-bold text-primary-400 mb-2 bumblebee-glow">9</div>
                 <div className="text-gray-400">Major Milestones</div>
               </motion.div>
               <motion.div 

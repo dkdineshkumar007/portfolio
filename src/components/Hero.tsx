@@ -61,9 +61,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            Passionate about building scalable web applications with modern technologies. 
-            Experienced in React, Node.js, and cloud platforms with a focus on delivering 
-            high-quality software solutions.
+            Building AI-native products and autonomous agent systems. Currently at iCustomer crafting
+            multi-agent workflows, PLG platforms, and decisioning tools with NestJS, Mastra AI, and RabbitMQ.
           </motion.p>
 
           {/* CTA Buttons */}

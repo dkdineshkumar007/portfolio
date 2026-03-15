@@ -131,11 +131,19 @@ export const timelineData = [
   },
   {
     id: 7,
+    year: "July 2025",
+    title: "Joined iCustomer",
+    description: "Transitioned to iCustomer as a Fullstack Engineer — building AI-native marketing products and architecting multi-agent systems using Mastra AI",
+    type: "career",
+    icon: "🤖"
+  },
+  {
+    id: 8,
     year: "2025",
-    title: "Continuous Growth",
-    description: "Continuing to expand expertise in cloud technologies and modern web development frameworks",
-    type: "ongoing",
-    icon: "🌟"
+    title: "AI-Native Product Development",
+    description: "Building a PLG platform serving 300+ users and an autonomous decisioning app powered by NestJS microservices, RabbitMQ, and OODA loop AI orchestration. Mentoring interns continues.",
+    type: "achievement",
+    icon: "🚀"
   }
 ];
 

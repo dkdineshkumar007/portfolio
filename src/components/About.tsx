@@ -6,10 +6,10 @@ import { personalInfo, aboutMe } from '@/data/personal'
 
 const About = () => {
   const stats = [
-    { icon: Code, label: 'Years Experience', value: '2+' },
-    { icon: Award, label: 'Projects Completed', value: '5+' },
+    { icon: Code, label: 'Years Experience', value: '3+' },
+    { icon: Award, label: 'Projects Completed', value: '15+' },
     { icon: Coffee, label: 'Cups of Coffee', value: '500+' },
-    { icon: User, label: 'Happy Clients', value: '5+' },
+    { icon: User, label: 'Interns Trained', value: '25+' },
   ]
 
   return (
@@ -48,7 +48,7 @@ const About = () => {
                       {personalInfo.name.split(' ').map(n => n[0]).join('')}
                     </div>
                     <p className="text-lg text-gray-400">
-                      Full Stack Developer
+                      Fullstack Engineer
                     </p>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-bold text-white mb-6">
-              Passionate Developer & Problem Solver
+              AI-Focused Engineer & Problem Solver
             </h3>
             
             <p className="text-lg text-gray-400 leading-relaxed">
@@ -170,7 +170,7 @@ const About = () => {
                 <div>
                   <p className="text-sm text-gray-500">Status</p>
                   <p className="text-primary-400 font-medium">
-                    Available for work
+                    Currently @ iCustomer
                   </p>
                 </div>
               </div>

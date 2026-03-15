@@ -90,19 +90,19 @@ const Skills = () => {
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-400 mb-2">3+</div>
+                <div className="text-3xl font-bold text-primary-400 mb-2">5+</div>
                 <div className="text-gray-400">Programming Languages</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-400 mb-2">10+</div>
+                <div className="text-3xl font-bold text-primary-400 mb-2">15+</div>
                 <div className="text-gray-400">Frameworks & Libraries</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-400 mb-2">8+</div>
+                <div className="text-3xl font-bold text-primary-400 mb-2">10+</div>
                 <div className="text-gray-400">Development Tools</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-400 mb-2">3+</div>
+                <div className="text-3xl font-bold text-primary-400 mb-2">4+</div>
                 <div className="text-gray-400">Database Systems</div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="text-center p-6 bg-primary-500/10 border border-primary-500/20 rounded-xl">
               <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4 bumblebee-glow">
                 <span className="text-black text-2xl font-bold">F</span>
@@ -135,10 +135,22 @@ const Skills = () => {
                 <span className="text-black text-2xl font-bold">B</span>
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">
-                Backend Developer
+                Backend Engineer
               </h4>
               <p className="text-gray-400 text-sm">
-                Proficient in Node.js, Express.js, and database management with PostgreSQL and MongoDB
+                Proficient in Node.js, NestJS, RabbitMQ, and database management with PostgreSQL and Redis
+              </p>
+            </div>
+
+            <div className="text-center p-6 bg-primary-500/10 border border-primary-500/20 rounded-xl">
+              <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4 bumblebee-glow">
+                <span className="text-black text-2xl font-bold">AI</span>
+              </div>
+              <h4 className="text-lg font-semibold text-white mb-2">
+                AI Agent Builder
+              </h4>
+              <p className="text-gray-400 text-sm">
+                Building autonomous multi-agent systems with Mastra AI, LangGraph, and OODA loop orchestration
               </p>
             </div>
           </div>

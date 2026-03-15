@@ -17,15 +17,23 @@ export const skillsData = {
   ],
   backend: [
     { name: "Node.js", level: 90, icon: "SiNodedotjs" },
+    { name: "NestJS", level: 80, icon: "SiNestjs" },
     { name: "Express.js", level: 90, icon: "SiExpress" },
     { name: "REST APIs", level: 85, icon: "SiPostman" },
+    { name: "RabbitMQ", level: 75, icon: "SiRabbitmq" },
     { name: "GraphQL", level: 70, icon: "SiGraphql" }
+  ],
+  aiAgents: [
+    { name: "Mastra AI", level: 80, icon: "SiOpenai" },
+    { name: "LangGraph", level: 70, icon: "SiPython" },
+    { name: "AI Agents", level: 80, icon: "SiOpenai" },
+    { name: "Prompt Engineering", level: 80, icon: "SiOpenai" }
   ],
   databases: [
     { name: "PostgreSQL", level: 90, icon: "SiPostgresql" },
     { name: "MongoDB", level: 75, icon: "SiMongodb" },
     { name: "MySQL", level: 80, icon: "SiMysql" },
-    { name: "Redis", level: 65, icon: "SiRedis" }
+    { name: "Redis", level: 75, icon: "SiRedis" }
   ],
   cloud: [
     { name: "Microsoft Azure", level: 50, icon: "SiMicrosoftazure" },
@@ -60,6 +68,11 @@ export const skillCategories = [
     title: "Backend",
     skills: skillsData.backend,
     color: "from-purple-500 to-violet-500"
+  },
+  {
+    title: "AI & Agents",
+    skills: skillsData.aiAgents,
+    color: "from-yellow-500 to-orange-500"
   },
   {
     title: "Databases",

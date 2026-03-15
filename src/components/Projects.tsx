@@ -1,13 +1,14 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink, Github, Code, Database, Server, Smartphone } from 'lucide-react'
+import { ExternalLink, Github, Code, Database, Server, Smartphone, Bot } from 'lucide-react'
 import { projectModules } from '@/data/experience'
 
 const Projects = () => {
   const getProjectIcon = (type: string) => {
+    if (type.includes('AI') || type.includes('Agent') || type.includes('Autonomous')) return Bot
     if (type.includes('Management') || type.includes('System')) return Database
-    if (type.includes('Integration') || type.includes('API')) return Server
+    if (type.includes('Integration') || type.includes('API') || type.includes('Platform')) return Server
     if (type.includes('Interactive') || type.includes('UI')) return Smartphone
     return Code
   }
@@ -26,7 +27,7 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Enterprise-level modules and systems I've built during my professional journey
+            Enterprise modules, AI-native platforms, and systems I've built across my professional journey
           </p>
         </motion.div>
 
@@ -132,11 +133,22 @@ const Projects = () => {
             <h3 className="text-2xl font-bold text-white mb-6 text-center">
               Project <span className="gradient-text">Categories</span>
             </h3>
-            <div className="grid md:grid-cols-4 gap-6">
-              <motion.div 
+            <div className="grid md:grid-cols-5 gap-4">
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center p-4 bg-accent-black-light border border-primary-500/30 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
+              >
+                <Bot className="w-8 h-8 text-primary-400 mx-auto mb-3" />
+                <h4 className="font-semibold text-white mb-1">AI & Agents</h4>
+                <p className="text-sm text-gray-400">Multi-agent, Decisioning</p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
                 className="text-center p-4 bg-accent-black-light border border-primary-500/30 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
               >
@@ -144,21 +156,21 @@ const Projects = () => {
                 <h4 className="font-semibold text-white mb-1">Management Systems</h4>
                 <p className="text-sm text-gray-400">Inventory, Orders, Suppliers</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="text-center p-4 bg-accent-black-light border border-primary-500/30 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
               >
                 <Server className="w-8 h-8 text-primary-400 mx-auto mb-3" />
                 <h4 className="font-semibold text-white mb-1">API Integration</h4>
-                <p className="text-sm text-gray-400">Multi-channel, Shipping APIs</p>
+                <p className="text-sm text-gray-400">CRM, Ads, Shipping APIs</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="text-center p-4 bg-accent-black-light border border-primary-500/30 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
               >
@@ -166,10 +178,10 @@ const Projects = () => {
                 <h4 className="font-semibold text-white mb-1">Interactive UI</h4>
                 <p className="text-sm text-gray-400">Real-time, 2D Layouts</p>
               </motion.div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
                 viewport={{ once: true }}
                 className="text-center p-4 bg-accent-black-light border border-primary-500/30 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
               >
@@ -189,31 +201,41 @@ const Projects = () => {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <div className="grid md:grid-cols-3 gap-6">
-            <motion.div 
+          <div className="grid md:grid-cols-4 gap-6">
+            <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
               className="text-center p-6 bg-accent-black-medium border border-primary-500/20 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
             >
-              <div className="text-3xl font-bold text-primary-400 mb-2 bumblebee-glow">9</div>
-              <div className="text-gray-400">Enterprise Modules</div>
+              <div className="text-3xl font-bold text-primary-400 mb-2 bumblebee-glow">12</div>
+              <div className="text-gray-400">Total Modules</div>
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
               className="text-center p-6 bg-accent-black-medium border border-primary-500/20 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
             >
-              <div className="text-3xl font-bold text-primary-400 mb-2 bumblebee-glow">15+</div>
+              <div className="text-3xl font-bold text-primary-400 mb-2 bumblebee-glow">20+</div>
               <div className="text-gray-400">API Integrations</div>
             </motion.div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-center p-6 bg-accent-black-medium border border-primary-500/20 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
+            >
+              <div className="text-3xl font-bold text-primary-400 mb-2 bumblebee-glow">300+</div>
+              <div className="text-gray-400">PLG Platform Users</div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
               className="text-center p-6 bg-accent-black-medium border border-primary-500/20 rounded-xl hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
             >

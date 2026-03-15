@@ -1,9 +1,35 @@
 export const experienceData = [
   {
     id: 1,
+    company: "iCustomer",
+    position: "Fullstack Engineer",
+    duration: "July 2025 - Present",
+    location: "India",
+    type: "Full-time",
+    description: "Building AI-native enterprise products for marketing automation — a PLG platform serving marketers and an autonomous decisioning application powered by multi-agent systems.",
+    responsibilities: [
+      "Architected multi-agent systems using Mastra AI to automate customer journey workflows, reducing manual intervention by 40%",
+      "Built and launched a PLG (Product-Led Growth) platform currently serving 300+ active users",
+      "Developing an autonomous AI decisioning platform using NestJS microservices with OODA loop architecture (Observe, Orient, Decide, Act)",
+      "Implemented CRM and marketing integrations with Klaviyo, Google Ads, Meta Ads, LinkedIn Ads, and Apollo for audience activation",
+      "Built event-driven microservices using RabbitMQ message queues for async signal processing and job orchestration",
+      "Built data enrichment pipelines to enrich incomplete audience lists with third-party data sources",
+      "Designed React-based Human-in-the-loop interfaces allowing users to verify and edit AI reasoning steps in real-time",
+      "Actively mentoring interns in fullstack and AI development, continuing a training tradition from previous role"
+    ],
+    technologies: ["NestJS", "Next.js", "React.js", "Node.js", "TypeScript", "PostgreSQL", "RabbitMQ", "Redis", "Mastra AI", "AWS S3", "Socket.io", "Klaviyo API", "Google Ads API", "Meta Ads API", "LinkedIn Ads API"],
+    achievements: [
+      "Launched PLG platform serving 300+ active users",
+      "Reduced manual customer journey interventions by 40% through AI multi-agent automation",
+      "Architected and built end-to-end autonomous AI decisioning OS with OODA loop orchestration",
+      "Mentoring interns in fullstack and AI development — continuing the intern training journey beyond Aroopa"
+    ]
+  },
+  {
+    id: 2,
     company: "Aroopa Technologies Pvt Ltd",
     position: "Associate Software Developer",
-    duration: "July 2024 - Present",
+    duration: "July 2024 - July 2025",
     location: "India",
     type: "Full-time",
     description: "Leading full-stack development initiatives and mentoring junior developers while working on complex enterprise solutions.",
@@ -17,7 +43,8 @@ export const experienceData = [
       "Developed features for order creation, order status tracking, and generating order reports",
       "Integrated PostgreSQL with the web application backend, ensuring seamless data flow and synchronization",
       "Utilized PostgreSQL database for data management and incorporated trigger functions and advanced queries for enhanced functionality",
-      "Conducted code reviews, identified and fixed bugs, and improved application performance",
+      "Conducted code reviews, identified and fixed bugs, and improved application performance by 30%",
+      "Trained and mentored 25 interns — structured onboarding, code reviews, and hands-on project guidance",
       "Utilized Git for version control, Azure Repos for repository management, and Azure DevOps for CI/CD pipelines",
       "Collaborated with cross-functional teams to gather requirements and deliver high-quality software solutions"
     ],
@@ -25,11 +52,12 @@ export const experienceData = [
     achievements: [
       "Successfully delivered multiple enterprise-level modules",
       "Improved application performance by 30%",
-      "Led code review processes and mentored junior developers"
+      "Trained and mentored 25 interns, guiding them from onboarding to production contributions",
+      "Led code review processes ensuring high code quality standards"
     ]
   },
   {
-    id: 2,
+    id: 3,
     company: "Aroopa Technologies Pvt Ltd",
     position: "Full Stack Developer Intern",
     duration: "March 2023 - June 2024",
@@ -53,6 +81,7 @@ export const experienceData = [
     ]
   }
 ];
+
 
 export const projectModules = [
   {
@@ -170,6 +199,45 @@ export const projectModules = [
       "Automated order synchronization",
       "Order status management",
       "Cross-platform inventory sync"
+    ]
+  },
+  {
+    id: 10,
+    name: "PLG Platform",
+    type: "Product-Led Growth for Marketers",
+    description: "Built a full-featured Product-Led Growth platform for marketers, serving 300+ active users, with audience segmentation, multi-platform ad activation, and data enrichment pipelines.",
+    technologies: ["Next.js", "React.js", "Node.js", "PostgreSQL", "Redis", "TypeScript", "Klaviyo API", "Google Ads API", "Meta Ads API"],
+    features: [
+      "Audience segmentation and cohort management",
+      "Multi-platform ad account activation (Google, Meta, LinkedIn)",
+      "Data enrichment pipelines for incomplete audience lists",
+      "Real-time analytics dashboard with multi-channel insights"
+    ]
+  },
+  {
+    id: 11,
+    name: "Decision OS",
+    type: "Autonomous AI Decisioning Platform",
+    description: "Architected an AI-native decisioning platform for marketers using OODA loop architecture — multi-agent systems observe signals, orient context, decide actions, and execute autonomously.",
+    technologies: ["NestJS", "Mastra AI", "RabbitMQ", "PostgreSQL", "Redis", "Socket.io", "TypeScript", "AWS S3"],
+    features: [
+      "Multi-agent orchestration using Mastra AI with persistent memory",
+      "OODA loop: real-time signal ingestion, pattern detection, LLM-based decisioning",
+      "Human-in-the-loop React UI for reviewing and editing AI reasoning steps",
+      "Event-driven microservices with RabbitMQ for async signal processing"
+    ]
+  },
+  {
+    id: 12,
+    name: "Audience Intelligence Hub",
+    type: "Multi-Platform Audience Management",
+    description: "Built the integrations service powering a unified audience intelligence layer — connecting CRM, ad platforms, email tools, and B2B prospecting APIs into a single activation surface.",
+    technologies: ["Express.js", "TypeScript", "PostgreSQL", "Drizzle ORM", "Klaviyo API", "Apollo API", "LinkedIn Ads API", "Meta Ads API"],
+    features: [
+      "14+ platform integrations: LinkedIn, Meta, Google, Reddit, Klaviyo, Apollo, Mailshake",
+      "Unified token management and data synchronization across platforms",
+      "CSV import/export and bulk audience activation workflows",
+      "Webhook handling and rate-limited API access management"
     ]
   }
 ];

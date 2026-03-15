@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/DK/Desktop/iCustomer/**)",
+      "Bash(find /c/Users/DK/Desktop/iCustomer/audience_loop/integrations_service/src -maxdepth 2 -type f -name *.ts)",
+      "Bash(find /c/Users/DK/Desktop/iCustomer/platform_v3/ic-decision-os-enterprise/apps/iWorker/src -maxdepth 2 -type f -name *.ts)"
+    ]
+  }
+}

@@ -144,18 +144,18 @@ const Experience = () => {
             <h3 className="text-2xl font-bold text-white mb-6 text-center">
               Professional <span className="gradient-text">Growth Journey</span>
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <motion.div 
+            <div className="grid md:grid-cols-4 gap-6">
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
                 className="text-center p-6 rounded-xl bg-accent-black-light border border-primary-500/30 hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
               >
-                <div className="text-4xl font-bold text-primary-400 mb-2 bumblebee-glow">2+</div>
+                <div className="text-4xl font-bold text-primary-400 mb-2 bumblebee-glow">3+</div>
                 <div className="text-gray-400">Years of Experience</div>
               </motion.div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -165,10 +165,20 @@ const Experience = () => {
                 <div className="text-4xl font-bold text-primary-400 mb-2 bumblebee-glow">9</div>
                 <div className="text-gray-400">Project Modules</div>
               </motion.div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center p-6 rounded-xl bg-accent-black-light border border-primary-500/30 hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
+              >
+                <div className="text-4xl font-bold text-primary-400 mb-2 bumblebee-glow">25+</div>
+                <div className="text-gray-400">Interns Trained</div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="text-center p-6 rounded-xl bg-accent-black-light border border-primary-500/30 hover:bg-primary-500/10 hover:border-primary-400/40 transition-all duration-300"
               >
