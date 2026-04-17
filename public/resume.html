@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinesh Kumar S - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 36px 44px;
+    }
+
+    /* ── Header ── */
+    .header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    .name {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+    }
+
+    .title {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #444;
+      margin: 2px 0 6px;
+    }
+
+    .contact {
+      font-size: 9.5pt;
+      color: #333;
+    }
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact span {
+      margin: 0 5px;
+      color: #888;
+    }
+
+    /* ── Section ── */
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Experience ── */
+    .job {
+      margin-bottom: 12px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .job-company {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #1a1a1a;
+    }
+
+    .job-date {
+      font-size: 9.5pt;
+      color: #444;
+      white-space: nowrap;
+    }
+
+    .job-title {
+      font-size: 10pt;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 16px;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 3px;
+      font-size: 10pt;
+      color: #1a1a1a;
+    }
+
+    /* ── Skills ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
+    }
+
+    .skill-row {
+      font-size: 10pt;
+    }
+
+    .skill-label {
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    /* ── Projects ── */
+    .project {
+      margin-bottom: 9px;
+    }
+
+    .project-title {
+      font-weight: 700;
+      font-size: 10pt;
+    }
+
+    .project-tech {
+      font-size: 9.5pt;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+
+    /* ── Education ── */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-school {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .edu-date {
+      font-size: 9.5pt;
+      color: #444;
+    }
+
+    .edu-degree {
+      font-size: 10pt;
+      color: #333;
+      font-style: italic;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: #fff; }
+      .page { padding: 28px 36px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">Dinesh Kumar S</div>
+    <div class="title">Fullstack Engineer &nbsp;|&nbsp; AI Agent Systems &nbsp;|&nbsp; Scalable Web Applications</div>
+    <div class="contact">
+      +91 7502787852
+      <span>|</span>
+      <a href="mailto:dkdineshkumar2001@gmail.com">dkdineshkumar2001@gmail.com</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/dineshdk2508" target="_blank">linkedin.com/in/dineshdk2508</a>
+      <span>|</span>
+      India
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p style="font-size:10pt; color:#1a1a1a;">
+      Fullstack Engineer with 3+ years of experience building AI-native products, autonomous agent systems, and enterprise-scale web applications.
+      Currently at iCustomer, architecting multi-agent workflows with Mastra AI, event-driven microservices with NestJS and RabbitMQ, and a PLG platform serving 300+ users.
+      Deep expertise across the JavaScript ecosystem (React, Next.js, NestJS, Node.js), PostgreSQL, and CRM/Ad platform integrations.
+      Proven track record in delivering complex ERP systems, reducing manual workflows by 40% through AI automation, and mentoring 25+ interns across two companies.
+    </p>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row">
+        <span class="skill-label">Languages:</span> JavaScript (ES6+), TypeScript, Python, Java
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Frontend:</span> React.js, Next.js, React Redux, Tailwind CSS, AG Grid, HTML5, CSS3
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Backend:</span> Node.js, NestJS, Express.js, REST APIs, RabbitMQ, Bull Queues, GraphQL
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">AI &amp; Agents:</span> Mastra AI, LangGraph, AI Agent Orchestration, Prompt Engineering, LLMs
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Databases:</span> PostgreSQL (Triggers, Stored Procedures), MongoDB, Redis, MySQL
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Integrations:</span> Klaviyo, HubSpot, Salesforce, Google Ads, Meta Ads, LinkedIn Ads, Apollo, Shopify, Amazon, Walmart, UPS, USPS, FedEx
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">DevOps &amp; Cloud:</span> AWS (EC2, S3), Azure DevOps, Docker, CI/CD, Git, IIS Server
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Tools:</span> Postman, PgAdmin, VS Code, GitHub, Socket.io, Drizzle ORM
+      </div>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <!-- iCustomer -->
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">iCustomer</div>
+        <div class="job-date">July 2025 – Present</div>
+      </div>
+      <div class="job-title">Fullstack Engineer &nbsp;|&nbsp; Full-time &nbsp;|&nbsp; India</div>
+      <ul>
+        <li>Architected multi-agent AI systems using <strong>Mastra AI</strong> to automate customer journey workflows, reducing manual interventions by <strong>40%</strong>.</li>
+        <li>Built and launched a <strong>PLG (Product-Led Growth) platform</strong> for marketers, currently serving <strong>300+ active users</strong> with audience segmentation and multi-platform ad activation.</li>
+        <li>Developing an autonomous <strong>AI decisioning platform</strong> using NestJS microservices with OODA loop architecture (Observe, Orient, Decide, Act), enabling fully autonomous marketing decisions.</li>
+        <li>Implemented <strong>14+ CRM and ad platform integrations</strong>: Klaviyo, Google Ads, Meta Ads, LinkedIn Ads, Reddit Ads, Apollo, Mailshake, HubSpot, and Salesforce.</li>
+        <li>Built <strong>event-driven microservices</strong> using RabbitMQ and Bull Queues for async signal processing, job orchestration, and real-time audience activation.</li>
+        <li>Engineered data enrichment pipelines to enrich incomplete audience lists with third-party data sources using Apollo and LinkedIn APIs.</li>
+        <li>Designed <strong>Human-in-the-Loop (HITL)</strong> React interfaces allowing users to inspect, verify, and override AI reasoning steps in real-time.</li>
+        <li>Mentoring interns in fullstack development and AI agent engineering — continuing an active intern training programme.</li>
+      </ul>
+    </div>
+
+    <!-- Aroopa - Associate -->
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">Aroopa Technologies Pvt Ltd</div>
+        <div class="job-date">July 2024 – July 2025</div>
+      </div>
+      <div class="job-title">Associate Software Developer &nbsp;|&nbsp; Full-time &nbsp;|&nbsp; India &nbsp;|&nbsp; <em>Promoted from Intern</em></div>
+      <ul>
+        <li>Engineered an end-to-end <strong>ERP solution</strong> for Inventory Management, Warehouse Management, and Order Management using React.js, Node.js, and PostgreSQL.</li>
+        <li>Built high-performance data grids with <strong>AG Grid</strong> featuring complex filtering, server-side pagination, and real-time updates across 10+ modules.</li>
+        <li>Integrated <strong>UPS, USPS, and FedEx APIs</strong> for automated shipping label generation and invoice creation.</li>
+        <li>Developed a <strong>real-time 2D warehouse picking layout</strong> UI guiding pickers to optimal product locations using live location data.</li>
+        <li>Automated <strong>multi-channel order synchronization</strong> from Amazon, Shopify, and Walmart with real-time status tracking.</li>
+        <li>Authored advanced <strong>PostgreSQL triggers and stored procedures</strong> to ensure data integrity across multi-warehouse locations.</li>
+        <li>Improved overall application performance by <strong>30%</strong> through query optimisation and frontend rendering improvements.</li>
+        <li>Managed deployment pipelines using <strong>Azure DevOps (CI/CD)</strong> and hosted applications on Azure / IIS Server.</li>
+        <li><strong>Trained and mentored 25 interns</strong> — structured onboarding, daily code reviews, and hands-on project guidance that resulted in productive production contributions.</li>
+      </ul>
+    </div>
+
+    <!-- Aroopa - Intern -->
+    <div class="job">
+      <div class="job-header">
+        <div class="job-company">Aroopa Technologies Pvt Ltd</div>
+        <div class="job-date">March 2023 – June 2024</div>
+      </div>
+      <div class="job-title">Full Stack Developer Intern &nbsp;|&nbsp; Internship &nbsp;|&nbsp; India</div>
+      <ul>
+        <li>Built and maintained full-stack web application modules using React.js, Node.js, Express.js, and PostgreSQL.</li>
+        <li>Implemented React Redux for state management and contributed to Inventory and Order Management modules.</li>
+        <li>Designed responsive UI components with Tailwind CSS and participated in code reviews, following industry best practices.</li>
+        <li>Promoted to full-time Associate Software Developer role based on performance within 15 months.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- KEY PROJECTS -->
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+
+    <div class="project">
+      <div class="project-title">PLG Platform &nbsp;|&nbsp; <span style="font-weight:400;">Product-Led Growth for Marketers</span></div>
+      <div class="project-tech">Next.js, React.js, Node.js, PostgreSQL, Redis, TypeScript, Klaviyo API, Google Ads API, Meta Ads API</div>
+      <ul>
+        <li>Full-featured PLG platform for marketers — 300+ active users, audience segmentation, cohort management, and multi-platform ad activation.</li>
+        <li>Integrated real-time analytics dashboard with multi-channel performance insights and bulk activation workflows.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Decision OS &nbsp;|&nbsp; <span style="font-weight:400;">Autonomous AI Decisioning Platform</span></div>
+      <div class="project-tech">NestJS, Mastra AI, RabbitMQ, PostgreSQL, Redis, Socket.io, TypeScript, AWS S3</div>
+      <ul>
+        <li>AI-native decisioning platform using OODA loop architecture — agents observe signals, orient context via LLMs, and autonomously execute marketing actions.</li>
+        <li>Human-in-the-loop React UI allowing users to review and override AI reasoning steps before autonomous execution.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Audience Intelligence Hub &nbsp;|&nbsp; <span style="font-weight:400;">Multi-Platform Audience Management</span></div>
+      <div class="project-tech">Express.js, TypeScript, PostgreSQL, Drizzle ORM, Klaviyo, Apollo, LinkedIn Ads, Meta Ads APIs</div>
+      <ul>
+        <li>Unified integrations service connecting 14+ platforms (LinkedIn, Meta, Google, Reddit, Klaviyo, Apollo, Mailshake) into a single audience activation surface.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Enterprise ERP System &nbsp;|&nbsp; <span style="font-weight:400;">Inventory, Warehouse &amp; Order Management</span></div>
+      <div class="project-tech">React.js, Node.js, Express.js, PostgreSQL, AG Grid, Azure DevOps</div>
+      <ul>
+        <li>End-to-end ERP covering Catalog, Inventory, Supplier, PO, Picking, Shipping, Dropship, and Order modules integrated with Amazon, Shopify, Walmart, UPS, USPS, FedEx.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">AI Web Research Agent &nbsp;|&nbsp; <span style="font-weight:400;">Personal Project</span></div>
+      <div class="project-tech">Python, LangGraph, Serp API</div>
+      <ul>
+        <li>Autonomous web-search agent for automated scraping, information retrieval, and document summarization using Serp API.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-header">
+      <div class="edu-school">KIT – Kalaignarkarunanidhi Institute of Technology, Coimbatore</div>
+      <div class="edu-date">2020 – 2024</div>
+    </div>
+    <div class="edu-degree">Bachelor of Engineering – Electrical and Electronics Engineering &nbsp;|&nbsp; CGPA: 8.5 / 10</div>
+  </div>
+
+  <!-- CERTIFICATIONS & EXTRA -->
+  <div class="section">
+    <div class="section-title">Certifications &amp; Leadership</div>
+    <ul>
+      <li><strong>NPTEL:</strong> Data Structures &amp; Algorithms in Python &nbsp;|&nbsp; Programming in Java &nbsp;|&nbsp; Internet of Things (IoT)</li>
+      <li><strong>Udemy:</strong> Fullstack Web Development &nbsp;|&nbsp; PostgreSQL &nbsp;|&nbsp; MongoDB</li>
+      <li><strong>Leadership:</strong> Joint Secretary – EEE Department Association (coordinated departmental technical and cultural events)</li>
+      <li><strong>Mentorship:</strong> Trained 25+ interns across Aroopa Technologies and iCustomer in fullstack development, code quality, and AI fundamentals</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,6 +33,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth dark">
+      <head>
+        <Script
+          src="https://aloop-signals-service.icustomer.ai/api/v1/vi/pixel.js"
+          data-workspace-id="cb48e2a3-9362-4ed8-b83f-f32ec34c7bee"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <div className="min-h-screen bg-gradient-to-br from-accent-black via-accent-black-light to-accent-black-medium">
           {children}
