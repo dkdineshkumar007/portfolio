@@ -57,9 +57,9 @@ export default function RootLayout({
                 };
                 j.onerror=function(){console.error('[Audience Loop] Pixel failed to load');};
                 var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);
-              })(window,document,'script','https://signal-collector.icustomer.ai/sgnl.js',{
-                workspace_id:'ws_1adfeee2-ef5e-4e26-a9e1-7f43543b63e2',
-                public_key:'pk_live_lnKcUX9p0O0DiW3VZEvdsCDAJOZ6B4Rb',
+              })(window,document,'script','https://staging-signal-collector.icustomer.ai/sgnl.js',{
+                workspace_id:'ws_e9eaf3c5-409e-49d5-9739-12a4a4cd7728',
+                public_key:'pk_live_sz2fjUyHy9XR32cemNHu4vHmnOnFmq7c',
                 autoPage:true,
                 consent:{
                   analytics:true,
